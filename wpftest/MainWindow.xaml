@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:wpftest"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
-        Title="E Y E" HorizontalAlignment="Center" Height="450" Width="670" MinHeight="290" MinWidth="390">
+        Title="E Y E" HorizontalAlignment="Center" Height="450" Width="670" MinHeight="444" MinWidth="390" >
     <Window.Resources>
         <Style TargetType="Button">
             <Setter Property="Background" Value="White"/>
@@ -27,6 +27,15 @@
         </Grid.ColumnDefinitions>
 
 
+        <TextBox
+            x:Name="txtBDname"
+            Height="27"
+            Margin="10 10 10 0"
+            FontFamily="Segoe UI Light"
+            FontSize="17"
+            MaxLength="100"/>
+
+
         <Button
             x:Name="btnBack"
             Grid.Column="1"
@@ -44,19 +53,10 @@
             Grid.ColumnSpan="2" 
             Grid.RowSpan="2"/>
 
-        <TextBox
-            x:Name="txtBDname"
-            Margin="10"
-            FontFamily="Segoe UI Light"
-            FontSize="15" />
-
         <StackPanel
             x:Name="pnlElements"
             Grid.Row="1"
-            Margin="10">
-            
-            
-        </StackPanel>
+            Margin="10"/>
 
     </Grid>
 </Window>
