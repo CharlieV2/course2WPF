@@ -17,21 +17,11 @@
     </Window.Resources>
 
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="47*"/>
-            <RowDefinition Height="372*"/>
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="301*"/>
-            <ColumnDefinition Width="361*"/>
-        </Grid.ColumnDefinitions>
-
-
         <TextBox
             x:Name="txtBDname"
             Height="27"
             MinWidth="140"
-            Margin="10,10,0,0"
+            Margin="10,13,0,0"
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
             FontFamily="Segoe UI Light"
@@ -41,7 +31,6 @@
 
         <Button
             x:Name="btnBack"
-            Grid.Column="1"
             Content="Back"
             Height="30"
             Width="90"
@@ -52,14 +41,7 @@
 
         <local:StartScreen
             x:Name="startScreen"
-            Visibility="Collapsed" 
-            Grid.ColumnSpan="2" 
-            Grid.RowSpan="2"/>
-
-        <StackPanel
-            x:Name="pnlElements"
-            Grid.Row="1"
-            Margin="10"/>
+            Visibility="Collapsed"/>
 
     </Grid>
 </Window>
