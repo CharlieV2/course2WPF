@@ -58,7 +58,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="HelpClasses\FileWorker.cs" />
-    <Compile Include="HelpClasses\InfoBase.cs" />
+    <Compile Include="HelpClasses\infobase.cs" />
     <Compile Include="HelpClasses\Sportsmen.cs" />
     <Compile Include="HelpClasses\Vars.cs" />
     <Compile Include="Properties\Resources.Designer.cs">

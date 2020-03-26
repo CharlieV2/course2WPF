@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:wpftest"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="670" Background="White" DragEnter="StartPanel_DragEnter" Drop="StartPanel_Drop" AllowDrop="True">
+             d:DesignHeight="421" d:DesignWidth="664" Background="White" DragEnter="StartPanel_DragEnter" Drop="StartPanel_Drop" AllowDrop="True">
     <Grid x:Name="StartPanel">
 
         <Label
@@ -23,60 +23,59 @@
             Margin="200,53,0,137"
             Visibility="Hidden" />
 
-        <Label
-            Content="Создание / Удаление баз данных"
-            FontFamily="Segoe UI Light"
-            FontSize="22"
-            Height="37"
-            HorizontalAlignment="Center"
+        <Button
+            x:Name="btnNext"
+            Content="Go next"
+            Height="30"
+            Width="320"
             VerticalAlignment="Top"
-            Margin="10" />
+            HorizontalAlignment="Left"
+            Margin="175,352,0,0"
+            Click="btnNext_Click" />
         <Label
-            Content="Имя базы данных:"
+            Content="Database manipulation"
+            FontFamily="Segoe UI Light"
+            FontSize="23"
+            HorizontalAlignment="Left"
+            Margin="222,12,0,0"
+            VerticalAlignment="Top"/>
+        <Label 
+            Content="database name"
             FontFamily="Segoe UI Light"
             FontSize="17"
-            Height="32"
-            HorizontalAlignment="Center"
-            VerticalAlignment="Top"
-            Margin="0 50 185 0" />
-
-        <TextBox
+            Foreground="Gray"
+            HorizontalAlignment="Left" 
+            Margin="170,55,0,0" 
+            VerticalAlignment="Top"/>
+        <TextBox 
             x:Name="txtBDname"
-            Height="27"
-            VerticalAlignment="Top"
-            HorizontalAlignment="Center"
-            Width="320"
-            Margin="0 85 0 0"
-            MaxLength="100"
+            HorizontalAlignment="Left" 
+            Height="27" 
+            MaxLength="20"
+            TextAlignment="Center"  
             FontFamily="Segoe UI Light"
             FontSize="18"
-            TextAlignment="Center" TextChanged="txtBDname_TextChanged" />
-
-        <Button
-            x:Name="btnCreate"
-            Content="Add"
-            Width="158"
-            Height="30"
-            VerticalAlignment="Top"
-            Margin="0 115 162 0"  
-            Click="btnCreate_Click" />
-
+            Margin="175,86,0,0" 
+            TextWrapping="Wrap" 
+            VerticalAlignment="Top" 
+            Width="320"
+            TextChanged="txtBDname_TextChanged" />
         <Button
             x:Name="btnDelete"
             Content="Delete"
             Width="158"
             Height="30"
             VerticalAlignment="Top"
-            Margin=" 162 115 0 4"
-            Click="btnDelete_Click" />
-
+            HorizontalAlignment="Left"
+            Click="btnDelete_Click"
+            Margin="337,118,0,0" />
         <Button
-            x:Name="btnNext"
-            Content="Go next"
-            Height="30"
-            Width="320"
-            VerticalAlignment="Bottom"
-            Margin="20"
-            Click="btnNext_Click" />
+            x:Name="btnCreate"
+            Content="Add" 
+            HorizontalAlignment="Left" 
+            Margin="175,118,0,0" 
+            VerticalAlignment="Top" 
+            Width="157" Height="30"
+            Click="btnCreate_Click"/>
     </Grid>
 </UserControl>

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace wpftest.HelpClasses
 {
-    public static class InfoBase
+    public static class infobase
     {
         #region InfoBase
         public static string[] countryArray = { "Japan", "Germany", "Russia", "French", "Gr. Britain", "USA", "Canada" };
@@ -29,7 +29,7 @@ namespace wpftest.HelpClasses
         public static string[] CanadaNameArray = { "Carter", "Daniel", "Felix", "Gabriel", "Jacob", "Antoine", "Alexis", "Liam", "Mason", "Noah", "Olivier", "Owen", "Lucas", "Tyler", "William", "Hailey", "Jessica", "Lea" };
         public static string[] CanadaSurnameArray = { "Abramson", "Adderiy", "Howard", "Holiday", "Jeff", "Jenkin", "Batton", "Alsopp", "Andrews", "Arnold", "Kelly", "Page", "Day", "Derrick", "Ralphs", "Ryder", "Young", "Haig" };
 
-        public static string[] Sport = { "Biathlon", "Bobsleigh", "Curling", "Snowboard", "Ski race", "Skiing"};
+        public static string[] sportArray = { "Biathlon", "Bobsleigh", "Curling", "Snowboard", "Ski race", "Skiing"};
         #endregion
     }
 }

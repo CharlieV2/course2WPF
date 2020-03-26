@@ -42,6 +42,5 @@
         <local:StartScreen
             x:Name="startScreen"
             Visibility="Collapsed"/>
-
     </Grid>
 </Window>
