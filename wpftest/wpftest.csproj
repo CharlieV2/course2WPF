@@ -57,6 +57,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ControlCollection\eye_TextBox.xaml.cs">
+      <DependentUpon>eye_TextBox.xaml</DependentUpon>
+    </Compile>
     <Compile Include="HelpClasses\FileWorker.cs" />
     <Compile Include="HelpClasses\infobase.cs" />
     <Compile Include="HelpClasses\Sportsmen.cs" />
@@ -69,6 +72,13 @@
     <Compile Include="StartScreen.xaml.cs">
       <DependentUpon>StartScreen.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Tabs\Tab_edit.xaml.cs">
+      <DependentUpon>Tab_edit.xaml</DependentUpon>
+    </Compile>
+    <Page Include="ControlCollection\eye_TextBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -82,6 +92,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="StartScreen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Tabs\Tab_edit.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -75,6 +75,7 @@ namespace wpftest
         {
             if (txtBDname.Text != "")
             {
+                statusBorder.Visibility = Visibility.Visible;
                 lblstatusBD.Visibility = Visibility.Visible;
 
                 string statusBD = fileWorker.CheckBD(txtBDname.Text);
@@ -84,24 +85,29 @@ namespace wpftest
                 {
                     case "All good":
                         btnCreate.Content = "Rewrite";
-                        lblstatusBD.BorderBrush = new SolidColorBrush(Colors.Lime);
+
+                        statusBorder.Stroke = Brushes.Lime;
                         break;
 
                     case "Empty":
                         btnCreate.Content = "Rewrite";
-                        lblstatusBD.BorderBrush = new SolidColorBrush(Colors.Yellow);
+
+                        statusBorder.Stroke = Brushes.Yellow;
                         break;
 
                     case "Not exist":
                         btnCreate.Content = "Add";
-                        lblstatusBD.BorderBrush = new SolidColorBrush(Colors.Tomato);
+
+                        statusBorder.Stroke = Brushes.Tomato;
                         break;
                 }
             }
             else
             {
                 btnCreate.Content = "Add";
+
                 lblstatusBD.Visibility = Visibility.Hidden;
+                statusBorder.Visibility = Visibility.Hidden;
             }
         }
     }
